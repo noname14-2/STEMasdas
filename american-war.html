@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/dark-mode.css" />
     <link rel="stylesheet" href="./assets/css/american-war.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="light-mode">
     <nav class="navbar navbar-expand-lg">
@@ -78,7 +79,7 @@
     <section id="intro" class="py-5">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-8">
+          <div class="col-lg-8" data-aos="fade-right">
             <h2>Cuộc kháng chiến chống sự can thiệp của Mỹ</h2>
             <h3>Tổng quan về cuộc chiến tranh Việt Nam và các sự kiện chính</h3>
             <p class="intro-text">
@@ -89,7 +90,7 @@
               <footer>- Lê Duẩn</footer>
             </blockquote>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
             <img
               src="./assets/images/american-war/intro.jpg"
               alt="Chiến tranh Việt Nam"
@@ -103,7 +104,7 @@
     <section id="timeline" class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="timeline-card" onclick="scrollToEvent('tet')">
               <img
                 src="./assets/images/american-war/tet.jpg"
@@ -116,7 +117,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div class="timeline-card" onclick="scrollToEvent('paris')">
               <img
                 src="./assets/images/american-war/paris.jpg"
@@ -129,7 +130,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
             <div class="timeline-card" onclick="scrollToEvent('fall-saigon')">
               <img
                 src="./assets/images/american-war/fall-saigon.jpg"
@@ -149,14 +150,14 @@
       <div class="container">
         <h2>Tổng tiến công Tết Mậu Thân</h2>
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <img
               src="./assets/images/american-war/tet-detail.jpg"
               alt="Tết Mậu Thân"
               class="img-fluid rounded"
             />
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <p>
               Cuộc Tổng tiến công Tết Mậu Thân năm 1968 là một chiến dịch quân sự lớn trong Chiến tranh Việt Nam, do lực lượng Bắc Việt và Mặt trận Dân tộc Giải phóng miền Nam Việt Nam phát động chống lại miền Nam Việt Nam và các đồng minh, bao gồm Hoa Kỳ. Bắt đầu vào ngày 30 tháng 1 năm 1968, trong dịp Tết Nguyên Đán, chiến dịch bao gồm các cuộc tấn công phối hợp vào hơn 100 thành phố và căn cứ quân sự. Mặc dù đây là một thất bại chiến thuật đối với miền Bắc do tổn thất nặng nề, nhưng chiến dịch đã gây sốc cho Hoa Kỳ và làm suy yếu đáng kể sự ủng hộ của công chúng Mỹ đối với chiến tranh, đánh dấu một bước ngoặt trong cuộc xung đột.
             </p>
@@ -164,10 +165,50 @@
               "Cuộc Tổng tiến công Tết Mậu Thân cho thấy người dân Mỹ rằng chiến tranh ở Việt Nam còn lâu mới kết thúc."
               <footer>- Đại tướng Võ Nguyên Giáp</footer>
             </blockquote>
+            
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#tetModal">
+              Xem thêm chi tiết
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="tetModal" tabindex="-1" aria-labelledby="tetModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tetModalLabel">Tổng tiến công và nổi dậy Tết Mậu Thân 1968</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>1. Tổng quan chiến dịch:</h5>
+            <h6>
+              Diễn ra vào dịp Tết Mậu Thân 1968, quân và dân miền Nam, dưới sự lãnh đạo của Đảng và Chủ tịch Hồ Chí Minh, đồng loạt tấn công vào các thành phố lớn như Sài Gòn, Huế, Đà Nẵng, cùng nhiều thị xã, thị trấn, chi khu quân sự.
+              Cuộc tổng tiến công gây tổn thất nặng nề cho Mỹ và chính quyền Sài Gòn, làm đảo lộn chiến lược của địch, 
+              đồng thời gây tiếng vang lớn trong và ngoài nước.
+              </h6>
+              <h5>2. Hoàn cảnh lịch sử:
+              </h5>
+              <h6>Sau 10 năm kháng chiến chống Mỹ (1954-1964), chiến lược "chiến tranh đặc biệt" của Mỹ bị phá sản. Từ 1965, Mỹ chuyển sang "chiến tranh cục bộ", tăng cường đưa quân vào miền Nam và đẩy mạnh chiến tranh phá hoại miền Bắc.
+                Đảng ta khẳng định quyết tâm "Không có gì quý hơn độc lập, tự do," kiên cường đối phó với chiến lược mới của Mỹ.
+                Năm 1967, các lãnh đạo như Lê Duẩn, Nguyễn Chí Thanh, Văn Tiến Dũng đề xuất chiến lược tấn công táo bạo vào đô thị, đặc biệt là Sài Gòn, để làm rung chuyển hậu phương Mỹ và tạo chuyển biến lớn trong chiến tranh.
+              </h6>
+              <img src="./assets/images/american-war/mauthan.jpg" alt="mauthan2" class="img-modal">
+              <h5>3. Chuẩn bị và diễn biến:</h5>
+              <h6>Bộ Chính trị tổ chức nhiều cuộc họp vào giữa năm 1967, quyết định kế hoạch tấn công vào dịp Tết. Kế hoạch tập trung vào gây bất ngờ chiến lược, đánh vào đầu não địch ở đô thị.
+                Cuộc tổng tiến công được chuẩn bị kỹ lưỡng: huy động lực lượng vũ trang, tổ chức kh���i nghĩa, điều động lực lượng chính trị, và phân chia chiến trường.
+                Chiến dịch bắt đầu vào Tết Mậu Thân, gây thiệt hại nặng nề cho Mỹ và đồng minh, đồng thời tạo cú sốc lớn trong dư luận Mỹ và thế giới.
+              </h6>
+              <h5>Ý nghĩa lịch sử:</h5>
+              <h6>Tổng tiến công Tết Mậu Thân 1968 là bước ngoặt lớn trong kháng chiến chống Mỹ, khẳng định ý chí kiên cường của dân tộc, góp phần thúc đẩy phong trào phản chiến tại Mỹ và làm suy yếu quyết tâm của kẻ thù.</h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="paris" class="event-section py-5">
       <div class="container">
@@ -181,6 +222,9 @@
               "Hiệp định đánh dấu một bước ngoặt, nhưng nó không kết thúc chiến tranh."
               <footer>- Cựu Ngoại trưởng Hoa Kỳ Henry Kissinger</footer>
             </blockquote>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#parisModal">
+              Xem thêm chi tiết
+            </button>
           </div>
           <div class="col-lg-6">
             <img
@@ -192,6 +236,38 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="parisModal" tabindex="-1" aria-labelledby="parisModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="parisModalLabel">Hi���p định Paris 1973</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>1. Bối cảnh lịch sử:</h5>
+            <h6>
+              Sau nhiều năm chiến đấu và đàm phán, các bên tham chiến đã đi đến thỏa thuận ký kết Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam vào ngày 27/1/1973.
+            </h6>
+            <h5>2. Nội dung chính của Hiệp định:</h5>
+            <h6>
+              - Hoa Kỳ và các nước cam kết tôn trọng độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam<br>
+              - Các bên ngừng bắn tại chỗ ở miền Nam Việt Nam<br>
+              - Hoa Kỳ rút hết quân đội của mình và quân đồng minh<br>
+              - Các bên trao trả tù binh và dân thường bị bắt
+            </h6>
+            <img src="./assets/images/american-war/paris-detail.jpg" alt="Hiệp định Paris" class="img-modal">
+            <h5>3. Ý nghĩa:</h5>
+            <h6>
+              Hiệp định Paris là thắng lợi của cuộc đấu tranh ngoại giao của Việt Nam, buộc Mỹ phải rút quân, tạo điều kiện thuận lợi cho cách mạng miền Nam tiến tới giải phóng hoàn toàn.
+            </h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="fall-saigon" class="event-section py-5">
       <div class="container">
@@ -212,6 +288,9 @@
               "Sài Gòn đã hoàn toàn giải phóng."
               <footer>- Lực lượng Bắc Việt</footer>
             </blockquote>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#saigonModal">
+              Xem thêm chi tiết
+            </button>
           </div>
         </div>
         <div class="row align-items-center mt-2">
@@ -225,6 +304,39 @@
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="saigonModal" tabindex="-1" aria-labelledby="saigonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="saigonModalLabel">Giải phóng Sài Gòn 1975</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>1. Chiến dịch Hồ Chí Minh:</h5>
+            <h6>
+              Chiến dịch được phát động vào ngày 26/4/1975, là đòn tấn công cuối cùng vào Sài Gòn, thủ đô của chính quyền Việt Nam Cộng hòa.
+            </h6>
+            <h5>2. Diễn biến chính:</h5>
+            <h6>
+              - Ngày 28/4: Quân Giải phóng bao vây Sài Gòn<br>
+              - Ngày 29/4: Không quân VNCH ngừng hoạt động<br>
+              - Ngày 30/4: Xe tăng quân Giải phóng tiến vào Dinh Độc Lập
+            </h6>
+            <img src="./assets/images/american-war/saigon-detail.jpg" alt="Giải phóng Sài Gòn" class="img-modal">
+            <h5>3. Kết quả:</h5>
+            <h6>
+              - Tổng thống Dương Văn Minh tuyên bố đầu hàng vô điều kiện<br>
+              - Sài Gòn được giải phóng hoàn toàn<br>
+              - Đánh dấu sự kết thúc của cuộc kháng chiến chống Mỹ
+            </h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="conclusion" class="py-5">
       <div class="container">
@@ -266,5 +378,14 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/american-war.js"></script>
     <script src="./assets/js/dark-mode.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,    
+        offset: 150,   
+        easing: 'ease-in-out' 
+      });
+    </script>
   </body>
 </html>
